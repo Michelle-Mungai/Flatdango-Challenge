@@ -1,0 +1,46 @@
+body{
+    background-color: navajowhite;
+    display: block;
+    opacity: 0.1rem;
+}
+.navbar{
+    background: lightcoral;
+    color:black;
+    font-family: 'Times New Roman', Times, serif;
+    align-items: center;
+    justify-content: center;
+}
+.navbar h2{
+    color: black;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    padding-left: 35rem;
+}
+.navbar h3{
+    font-style: italic;
+    justify-content: center;
+    align-items: center;
+    padding-left: 25rem;
+}
+#tickets{
+    background: white;
+    color: black;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    text-align: center;
+    font-display: block;
+    font-weight: bold;
+}
+#moviePoster{
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+button{
+    margin-right: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: lightseagreen;
+}
