@@ -18,17 +18,25 @@ fetch("http://localhost:3000/films")
 
   //display title of first film
   const titleAndRunTime = document.createElement("titleAndRunTime")
+//   let paraTitle = document.createElement("p")
+//   let paraRuntime = document.createElement("p")
+
+//   paraTitle.innerText = firstFilm.title
+//   paraRuntime.innerText = `${firstFilm.runtime} minutes`
+
+//   titleAndRunTime.appendChild(paraRuntime)
+//   titleAndRunTime.appendChild(paraTitle)
+
+  const moreDetails = document.getElementById("moreDetails")
+
   let paraTitle = document.createElement("p")
   let paraRuntime = document.createElement("p")
 
   paraTitle.innerText = firstFilm.title
   paraRuntime.innerText = `${firstFilm.runtime} minutes`
-  titleAndRunTime.appendChild(paraRuntime)
-  titleAndRunTime.appendChild(paraTitle)
-
-  const moreDetails = document.getElementById("moreDetails")
+  
   let paraDescription = document.createElement("p")
-  let showtimebtn = document.createElement("button")
+  let showtimebtn = document.createElement("p")
 
   let remTickets = firstFilm.capacity - firstFilm.tickets_sold
   let spanElement = document.createElement("span")
@@ -37,14 +45,15 @@ fetch("http://localhost:3000/films")
 
 
 
-  showtimebtn.innerText = firstFilm.showtime
+  showtimebtn.innerText = `Movie Time: ${firstFilm.showtime}`
   paraDescription.innerText = firstFilm.description
   spanElement.innerText = `${remTickets} tickets left`
   ticketBtn.innerText = "BUY TICKET"
 
 
 
-
+  moreDetails.appendChild(paraTitle)
+  moreDetails.appendChild(paraRuntime)
   moreDetails.appendChild(paraDescription)
   moreDetails.appendChild(showtimebtn)
   moreDetails.appendChild(breakElement)
