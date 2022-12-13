@@ -1,4 +1,4 @@
-# wk3-code-challenge
+# Flatdango Challenge
 
 ## Description
 This project is a web app named **Flatdango**, a m ovie application that is used to display information to a user about the different movies available and allowing the user to purchase tickets for a movie.\
