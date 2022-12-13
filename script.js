@@ -4,7 +4,7 @@ fetch("http://localhost:3000/films")
 
  // let allMovies = data
   //console.log(data);
-  const firstFilm = data.find((object) => object.id == 5)
+  const firstFilm = data.find((object) => object.id == 1)
   //console.log(firstFilm);
   
   const posterDiv = document.getElementById("moviePoster")
