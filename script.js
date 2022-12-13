@@ -4,7 +4,7 @@ fetch("http://localhost:3000/films")
 
  // let allMovies = data
   //console.log(data);
-  const firstFilm = data.find((object) => object.id == 10)
+  const firstFilm = data.find((object) => object.id == 5)
   //console.log(firstFilm);
   
   const posterDiv = document.getElementById("moviePoster")
@@ -17,16 +17,6 @@ fetch("http://localhost:3000/films")
   posterDiv.appendChild(imageElement)
 
   //display title of first film
-  const titleAndRunTime = document.createElement("titleAndRunTime")
-//   let paraTitle = document.createElement("p")
-//   let paraRuntime = document.createElement("p")
-
-//   paraTitle.innerText = firstFilm.title
-//   paraRuntime.innerText = `${firstFilm.runtime} minutes`
-
-//   titleAndRunTime.appendChild(paraRuntime)
-//   titleAndRunTime.appendChild(paraTitle)
-
   const moreDetails = document.getElementById("moreDetails")
 
   let paraTitle = document.createElement("p")
