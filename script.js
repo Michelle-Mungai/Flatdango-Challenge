@@ -1,4 +1,4 @@
-fetch("http://localhost:3000/films")
+fetch("https://api.npoint.io/be154f9b2f3aff946d03/films")
   .then((resp) => resp.json())
   .then((data) => {
     // let allMovies = data
@@ -50,7 +50,7 @@ fetch("http://localhost:3000/films")
     });
   });
 function getFilms() {
-  fetch("http://localhost:3000/films")
+  fetch("https://api.npoint.io/be154f9b2f3aff946d03/films")
     .then((response) => response.json())
     .then(renderFilms);
 }

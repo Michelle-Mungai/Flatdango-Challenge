@@ -2,6 +2,7 @@ body{
     background-color: navajowhite;
     display: block;
     opacity: 0.1rem;
+    cursor: pointer;
 }
 .navbar{
     background: lightcoral;
